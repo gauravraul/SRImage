@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <LinearLayout
+            android:padding="0dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageView"
+                android:src="@mipmap/croppeddoor"
+                android:scaleType="centerCrop"
+                android:layout_margin="5dp"
+               />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:paddingLeft="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text = "Gaurav"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:id="@+id/tx_name"
+                android:textAlignment="textStart" />
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="add"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_input_add"
+                android:tint="@android:color/darker_gray"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
